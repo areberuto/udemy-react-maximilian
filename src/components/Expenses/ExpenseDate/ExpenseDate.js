@@ -1,6 +1,6 @@
 import "./ExpenseDate.css";
 
-function ExpenseDate(props) {
+const ExpenseDate = (props) => {
   // The props parameter holds all the data that is passed to the
   // component via attributes.
   const month = props.date.toLocaleString("en-US", { month: "long" });
@@ -14,6 +14,6 @@ function ExpenseDate(props) {
       <div className="expense-date__year">{year}</div>
     </div>
   );
-}
+};
 
 export default ExpenseDate;
