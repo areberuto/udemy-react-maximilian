@@ -1,0 +1,41 @@
+.pp-add-users {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40rem;
+  max-width: 95%;
+  margin: 1rem auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  &__input-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    max-width: 90%;
+    margin: 1rem auto;
+    & label {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    & input {
+      padding: 1rem;
+      &:focus {
+        outline: none;
+        border-color: #4f005f;
+      }
+    }
+  }
+  &__empty {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0.25rem;
+    font-size: 0.8rem;
+    color: red;
+  }
+  & Button {
+    margin: 0.5rem;
+  }
+}
